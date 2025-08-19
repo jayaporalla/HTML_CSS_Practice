@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        text-align: center;
+    }
+    th {
+        border: 1px solid black;
+        background-color: aqua;
+        padding: 20px;
+        font-size: 30px;
+    }
+    td {
+        border: 1px solid black;
+        background-color: bisque;
+        color: rgb(29, 91, 207);
+        padding: 10px;
+        font-size: 20px;
+    }
+    body {
+        background-color: rgb(208, 214, 212);
+    }
+</style>
+<body>
+    <table>
+        <tr>
+            <th>First_Name</th>
+            <th>Last_Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jayasri</td>
+            <td rowspan="2">Poralla</td>
+            <td>24</td>
+        </tr>
+        <tr>
+            <td>Likitha</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>Adrash</td>
+            <td>Silliverulu</td>
+            <td>26</td>
+        </tr>
+        <tfoot> 
+            <td colspan="3" style="color: black;">This is a sample user data</td>
+        </tfoot>
+    </table>
+</body>
+</html>
