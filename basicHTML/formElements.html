@@ -6,8 +6,41 @@
     <title>Document</title>
 </head>
 <body>
-    <form>
-        
+    <form action="/submitform" method="post" target="_blank" autocomplete="on">
+        <label for="email">Email: </label>&nbsp;
+        <input type="email" name="email" placeholder="Enter your emailId"/>
+        <br><br>
+        <label for="pwd">Password: </label>&nbsp;
+        <input type="password" name="pwd" placeholder="Enter your password"/>
+        <br><br>
+        <input type="submit" value="Login"/>
+        <br><br>
+        <label>Select one among options</label>&nbsp;
+        <select size="1">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+        <br><br>
+        <textarea rows="15" cols="20" style="width: 409px; height: 54px; max-width: 500px; max-height: 500px;">
+            Enter your text here..
+        </textarea>
+        <br><br>
+        <button onclick="alert('Why you click me 🥲')">Don't Click Me</button>
+        <br><br>
+        <fieldset>
+            <legend>Login</legend>
+            <input type="email" name="email" placeholder="Email" list="mylist" required/>
+            <input type="password" name="password" placeholder="Password" required/>
+            <datalist id="mylist">
+                <option value="Jayasri">
+                <option value="Likki">
+                <option value="Puppy">
+                <option value="Chinni">
+            </datalist>
+            <input type="submit" name="login" value="Login" formaction="/submitdata" formenctype="multipart/form-data" formmethod="post" formtarget="_blank"/>
+        </fieldset>
     </form>
 </body>
 </html>
