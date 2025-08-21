@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="file" id="myfile" onchange="getFileData()">
+    <div id="container"></div>
+</body>
+<script>
+    function getFileData(){
+        var fileInput = document.getElementById("myfile");
+        var fileData = fileInput.files[0];
+        var output = document.getElementById("container");
+        output.innerHTML = 
+        'File Name: ' + fileData.name + '<br>' +
+        'File Type: ' + fileData.type + '<br>' + 
+        'File Size: ' + fileData.size + '<br>'
+    }
+</script>
+</html>

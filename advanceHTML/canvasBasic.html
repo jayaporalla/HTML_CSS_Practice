@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        background-color: antiquewhite;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        height: 100vh;
+    }
+    #canva {
+        background-color: rgb(231, 245, 245);
+        border-radius: 5px;
+        height: 80%;
+    }
+</style>
+<body>
+    <canvas id="canva" width="500" height="500"></canvas>
+</body>
+<script>
+    const canva = document.getElementById('canva');
+    const ctx = canva.getContext('2d');
+    canva.width = window.innerWidth - 100;
+
+    // fill Rect
+    // ctx.fillStyle = 'red';
+    // ctx.fillRect(20, 20, 80, 30);
+
+    // ctx.fillStyle = 'blue';
+    // ctx.fillRect(120, 20, 80, 30);
+
+    //stroke rect
+    // ctx.lineWidth = 2;
+    // ctx.strokeStyle = 'green';
+    // ctx.strokeRect(20, 20, 80, 30);
+
+    // ctx.lineWidth = 1;
+    // ctx.strokeStyle = 'red';
+    // ctx.strokeRect(120, 20, 80, 30);
+
+    //clear rect
+    // ctx.clearRect(25, 25, 70, 20);
+
+    //fill text
+    // ctx.font = '30px Arial';
+    // ctx.fillStyle = 'purple';
+    // ctx.fillText("Hello World", 400, 50);
+    // ctx.strokeStyle = 'red';
+    // ctx.strokeText("Hello World", 600, 50);
+
+    // ctx.beginPath();
+    // ctx.moveTo(200, 150);
+    // ctx.lineTo(400, 150);
+    // ctx.lineTo(400, 250);
+    // ctx.lineTo(200, 250);
+    // ctx.lineTo(200, 150);
+
+    // ctx.lineWidth = 2;
+    // ctx.strokeStyle = 'red';
+    // ctx.stroke()
+    // ctx.fillStyle = 'blue';
+    // ctx.fill();
+
+    ctx.beginPath();
+    ctx.arc(200, 150, 100, 0, Math.PI * 2);
+    ctx.strokeStyle = 'red';
+    ctx.stroke();
+    ctx.fillStyle = 'blue';
+    ctx.fill();
+</script>
+</html>
