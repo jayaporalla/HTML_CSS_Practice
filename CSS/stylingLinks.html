@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    div{
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(187, 214, 215);
+        align-items: center;
+        padding: 0 20px;
+    }
+    img {
+        padding: 20px;
+    }
+    nav ul{
+        display: flex;
+        align-items: center;
+        list-style: none;
+        gap: 20px;
+    }
+    nav ul li a {
+        color: rgb(85, 80, 80);
+        font-size: 18px;
+    }
+    .styling:visited {
+        color: green;
+    }
+    .styling:hover{
+        color: red;
+        background-color: rgba(255, 234, 11, 0.971);
+        padding: 10px 20px;
+        border-radius: 10px;
+        transition: all 1.3s ease-in-out;
+    }
+</style>
+<body>
+    <div>
+        <img src="https://media.geeksforgeeks.org/gfg-gg-logo.svg"/>
+        <nav>
+            <ul>
+                <li><a href="/" class="styling">Home</a></li>
+                <li><a href="/about" class="styling">About</a></li>
+                <li><a href="/contact" class="styling">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* .inline-block-example {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        background-color: red;   
+    }
+    .container {
+        background-color: aqua;   
+        display: inline-block;
+        width: 100vw;
+    } */
+
+    /* .flex-example {
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+        background-color: red;
+    }
+    .container {
+        display: flex;
+        background-color: aqua;
+        justify-content: center;
+        align-items: center;
+    } */
+
+     .grid-example {
+        width: 150px;
+        height: 150px;
+        margin: 10px;
+        background-color: red;
+        align-items: center;
+        text-align: center;
+        display: grid;
+     }
+     .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        background-color: aqua;
+        gap: 20px;
+        padding: 20px;
+     }
+</style>
+<body>
+    <!-- Display - inline-block, none, flex, grid -->
+     <!-- <div class="container">
+        <div class="inline-block-example"></div>
+        <div class="inline-block-example"></div>
+        <div class="inline-block-example"></div>
+     </div> -->
+
+     <!-- <div class="container">
+        <div class="flex-example"></div>
+        <div class="flex-example"></div>
+        <div class="flex-example"></div>
+     </div> -->
+
+     <div class="container">
+        <div class="grid-example">1</div>
+        <div class="grid-example">2</div>
+        <div class="grid-example">3</div>
+        <div class="grid-example">4</div>
+        <div class="grid-example">5</div>
+        <div class="grid-example">6</div>
+     </div>
+</body>
+</html>
