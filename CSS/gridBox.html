@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    /* .container {
+        display: grid;
+        background-color: aqua;
+        border: 3px solid black;
+        height: 400px;
+        width: 800px;
+        grid-gap: 5px;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 20px;
+        grid-template-rows: 1fr 2fr 0.5fr; /*1fr means first row 2fr means second row not coulmn row*/
+    /*}
+    .item {
+        background-color: #444;
+        color: white;
+        font-size: 30px;
+        padding: 10px;
+        text-align: center;
+    }
+    .item:nth-child(1) {
+        grid-column: 1 / 4;
+        background-color: green;
+    }
+    .item:nth-child(2) {
+        grid-column: 1/2;
+        background-color: rgb(122, 47, 122);
+    }
+    .item:nth-child(3) {
+        grid-column: 2/4;
+        background-color: pink;
+    }
+    .item:nth-child(4){
+        grid-column: 1 / 4;
+        background-color: lightcoral;
+    } */
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 100px);
+        grid-template-rows: repeat(3, 100px);
+        border: 1px solid black;
+        width: 400px;
+        height: 400px;
+        grid-gap: 10px;
+        align-content: center;
+        justify-content: center;
+    }
+    .item {
+        background-color: #444;
+        color: #fff;
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+    }
+</style>
+<body>
+    <!-- <div class="container">
+        <div class="item">1 Navbar</div>
+        <div class="item">2 Sidebar</div>
+        <div class="item">3 Content</div>
+        <div class="item">4 Footer</div>
+    </div> -->
+    
+
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+    </div>
+</body>
+</html>
