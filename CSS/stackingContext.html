@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    .container {
+        width: 400px;
+        height: 300px;
+        background-color: aqua;
+        margin: 20px;
+        position: relative;
+        z-index: 15; /*Z-index checks which z-index have more value and displays that box to the user*/
+    }
+    .box1{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: absolute;
+        z-index: 5;
+        top: 0;
+        left: 0;
+    }
+    .box2 {
+        width: 80px;
+        height: 80px;
+        background-color: green;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 15;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 800px;
+        min-height: 400px;
+        background-color: aqua;   
+    }
+    .container p {
+        background-color: red;
+        box-sizing: border-box;
+        font-size: 25px;
+        color: white;
+        border: 1px solid black;
+        text-align: center;
+    }
+    /* .flexcontainer {
+        display: flex;
+
+        /* flex-direction: column; */
+        /* flex-direction: column-reverse; */
+        /* flex-direction: row-reverse; */
+        /* flex-direction: row; */
+
+        /* justify-content: baseline; */
+        /* justify-content: center; */
+        /* justify-content: space-around; */
+        /* justify-content: space-evenly; */
+        /* justify-content: space-between; */
+
+        /* align-items: baseline; */
+        /* align-items: center; */
+        /* align-items: end; */
+        /* align-items: self-end; */
+        /* align-items: first baseline; */
+
+        /* flex-wrap: wrap; */
+        /* flex-wrap: nowrap; */
+        /* flex-wrap: wrap-reverse; */
+    /* }
+    p {
+        width: 350px; */
+        /* align-self: center; */
+        /* align-self: flex-start; */
+        /* align-self: flex-end; */
+        /* align-self: normal;
+    } */
+    /* p:nth-child(2){
+        height: 100px;
+    } */ 
+
+    .flexcontainer {
+        display: flex;
+    }
+
+    p {
+        width: 350px;
+        height: 70px;
+     }
+
+     p:nth-child(1){
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 100px;
+     }
+
+     p:nth-child(2) {
+        flex-grow: 2;
+        flex-shrink: 2;
+        flex-basis: 20px;
+     }
+</style>
+<body>
+    <!-- <div class="container flexcontainer">
+        <p>Hey</p>
+        <p>there</p>
+        <p>How</p>
+        <p>are</p>
+        <p>you</p>
+    </div> -->
+     <div class="container flexcontainer">
+        <p>Hey</p>
+        <p>there</p>
+    </div>
+</body>
+</html>
